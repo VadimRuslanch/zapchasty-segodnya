@@ -1,0 +1,715 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="/src/style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Запчасти, диагностика и ремонт грузовых авто с доставкой на трассу по маршруту Ростов-на-Дону → Чонгар. Звоните +7 (987) 654-32-10."
+    />
+    <meta name="theme-color" content="#17346f"/>
+    <title>Запчасти Сегодня | Помощь грузовым авто на маршруте Ростов-на-Дону → Чонгар</title>
+</head>
+<body>
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M5 4.5h4l1.2 4.1-2 1.6a15.1 15.1 0 0 0 5.6 5.6l1.6-2L19.5 15v4c0 1.1-.9 2-2 2C10.6 21 3 13.4 3 6.5c0-1.1.9-2 2-2Z"/>
+    </symbol>
+    <symbol id="icon-route" viewBox="0 0 24 24">
+        <path d="M6 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm12-12a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/>
+        <path d="M7.8 16.8 12 12m0 0 2.8-3.2M12 12l4 4"/>
+    </symbol>
+    <symbol id="icon-tool" viewBox="0 0 24 24">
+        <path d="M14.7 6.3a4 4 0 0 0 3 5.7l-7.4 7.4a1.8 1.8 0 1 1-2.6-2.6l7.4-7.4a4 4 0 0 0 5.7-3"/>
+    </symbol>
+    <symbol id="icon-truck" viewBox="0 0 24 24">
+        <path d="M3 7h10v8H3z"/>
+        <path d="M13 10h4l3 3v2h-7z"/>
+        <path d="M7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+    </symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24">
+        <path d="m12 3 8 4.5-8 4.5L4 7.5 12 3Z"/>
+        <path d="M4 7.5V16.5L12 21l8-4.5V7.5"/>
+        <path d="M12 12v9"/>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+        <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/>
+        <path d="M12 7v5l3 2"/>
+    </symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/>
+        <path d="M9 4v14m6-12v14"/>
+    </symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="m13 2-8 11h5l-1 9 8-11h-5l1-9Z"/>
+    </symbol>
+    <symbol id="icon-wrench" viewBox="0 0 24 24">
+        <path d="M21 7.5A5.5 5.5 0 0 1 13.5 13L6 20.5a1.8 1.8 0 1 1-2.5-2.5L11 10.5A5.5 5.5 0 0 1 18 3l-3 3 3 1.5L21 7.5Z"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3 5 6v5c0 5 3 8.5 7 10 4-1.5 7-5 7-10V6l-7-3Z"/>
+        <path d="m9.5 12 1.8 1.8 3.7-4"/>
+    </symbol>
+</svg>
+
+<main class="page-shell">
+    <header class="topbar container">
+        <div class="brand-lockup">
+            <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
+            <!--            <span class="brand-lockup__mark">Запчасти Сегодня</span>-->
+            <!--                        <div>-->
+            <!--                            <p class="brand-lockup__title"></p>-->
+            <!--                        </div>-->
+        </div>
+        <nav>
+             Меню для быстрого перехода между разделами
+        </nav>
+        <a class="button button--primary" href="tel:+79876543210">+7 (987) 654-32-10</a>
+    </header>
+    <section class="hero">
+        <div class="hero__backdrop" aria-hidden="true"></div>
+        <div class="hero__grid container">
+            <div class="hero__content">
+
+
+                <p class="hero__eyebrow">Срочная помощь грузовику на маршруте Ростов-на-Дону — Чонгар</p>
+                <h1 class="hero__eyebrow-title">Запчасти, диагностика и ремонт грузовых авто с выездом к машине</h1>
+                <p class="hero__subtitle">
+                    Подбор по телефону, доставка на трассу и согласование точки передачи без форм, каталога и лишних
+                    действий.
+                </p>
+
+
+                <div class="hero__badge-row">
+                    <div class="mini-pill">
+                        <span class="mini-pill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-truck"></use>
+                            </svg>
+                        </span>
+                        <span>Выезд к машине</span>
+                    </div>
+                    <div class="mini-pill">
+                        <span class="mini-pill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-map"></use>
+                            </svg>
+                        </span>
+                        <span>Доставка в точку на маршруте</span>
+                    </div>
+                    <div class="mini-pill">
+                        <span class="mini-pill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-box"></use>
+                            </svg>
+                        </span>
+                        <span>Большой ассортимент деталей</span>
+                    </div>
+                    <div class="mini-pill">
+                        <!--                        <span class="mini-pill__icon">-->
+                        <!--                            <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                        <!--                                <use href="#icon-tool"></use>-->
+                        <!--                            </svg>-->
+                        <!--                        </span>-->
+                        <span>Сервис в Таганроге</span>
+                    </div>
+                </div>
+
+                <a class="button button--primary" href="tel:+79876543210">
+                        <span class="button__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-phone"></use>
+                            </svg>
+                        </span>
+                    <span>Позвонить сейчас</span>
+                </a>
+
+                <!--                <a class="hero__phone-link" href="tel:+79876543210">-->
+                <!--                    <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                <!--                        <use href="#icon-phone"></use>-->
+                <!--                    </svg>-->
+                <!--                    <span>+7 (987) 654-32-10</span>-->
+                <!--                </a>-->
+
+                <!--                <div class="hero__cta-row">-->
+
+                <!--                    <a class="button button&#45;&#45;secondary" href="tel:+79876543210">-->
+                <!--                        <span class="button__icon">-->
+                <!--                            <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                <!--                                <use href="#icon-phone"></use>-->
+                <!--                            </svg>-->
+                <!--                        </span>-->
+                <!--                        <span>Нужна консультация — позвонить</span>-->
+                <!--                    </a>-->
+                <!--                </div>-->
+
+                <!--                <a class="route-link" href="#delivery-zone">-->
+                <!--                    <span class="route-link__icon">-->
+                <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                <!--                            <use href="#icon-route"></use>-->
+                <!--                        </svg>-->
+                <!--                    </span>-->
+                <!--                    <span>Работаем по маршруту: Ростов-на-Дону → Таганрог → Мариуполь → Бердянск → Приморск → Мелитополь → Новоалексеевка → Чонгар</span>-->
+                <!--                </a>-->
+
+                <div class="hero__notes">
+                    <p>Срочно? Назовите точку на маршруте и характер поломки — подскажем ближайший вариант помощи.</p>
+                    <p>Стоимость и условия уточняйте по звонку. На сайте нет цен и остатков.</p>
+                </div>
+            </div>
+
+            <aside class="hero-panel">
+                <!--                <div class="hero-panel__rule">-->
+                <!--                    <span class="hero-panel__rule-icon">-->
+                <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                <!--                            <use href="#icon-shield"></use>-->
+                <!--                        </svg>-->
+                <!--                    </span>-->
+                <!--                    <p>Цены, сроки, наличие и способы оплаты не публикуются. Все детали согласуем по телефону.</p>-->
+                <!--                </div>-->
+
+                <div class="audience-card">
+                    <p class="audience-card__label">Для кого этот сервис</p>
+                    <div class="audience-card__chips">
+                        <span>Водители грузовиков в дороге</span>
+                        <span>Владельцы техники</span>
+                        <span>Диспетчеры</span>
+                        <span>Логисты</span>
+                    </div>
+                </div>
+
+                <div class="hero-panel-info">
+                    <div class="route-card">
+                        <div class="route-card__header">
+                            <div>
+                                <p class="route-card__label">Ключевой маршрут</p>
+                            </div>
+                        </div>
+                        <ol class="route-trace">
+                            <li class="route-trace__item"><span class="route-trace__dot">01</span><span
+                                    class="route-trace__city">Ростов-на-Дону</span></li>
+                            <li class="route-trace__item"><span class="route-trace__dot">02</span><span
+                                    class="route-trace__city">Таганрог</span></li>
+                            <li class="route-trace__item"><span class="route-trace__dot">03</span><span
+                                    class="route-trace__city">Мариуполь</span></li>
+                            <li class="route-trace__item"><span class="route-trace__dot">04</span><span
+                                    class="route-trace__city">Бердянск</span></li>
+                            <li class="route-trace__item"><span class="route-trace__dot">05</span><span
+                                    class="route-trace__city">Приморск</span></li>
+                            <li class="route-trace__item"><span class="route-trace__dot">06</span><span
+                                    class="route-trace__city">Мелитополь</span></li>
+                            <li class="route-trace__item"><span class="route-trace__dot">07</span><span
+                                    class="route-trace__city">Новоалексеевка</span></li>
+                            <li class="route-trace__item"><span class="route-trace__dot">08</span><span
+                                    class="route-trace__city">Чонгар</span></li>
+                        </ol>
+                    </div>
+                    <div class="fact-grid">
+                        <article class="fact-card">
+                            <!--                        <span class="fact-card__icon">-->
+                            <!--                            <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                            <!--                                <use href="#icon-phone"></use>-->
+                            <!--                            </svg>-->
+                            <!--                        </span>-->
+                            <h3>Подбор по телефону</h3>
+                            <p>Сразу называете марку, поломку и точку на маршруте.</p>
+                        </article>
+                        <article class="fact-card">
+                            <!--                        <span class="fact-card__icon">-->
+                            <!--                            <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                            <!--                                <use href="#icon-route"></use>-->
+                            <!--                            </svg>-->
+                            <!--                        </span>-->
+                            <h3>Доставка на трассу</h3>
+                            <p>Согласуем передачу в городе, на трассе или по геолокации.</p>
+                        </article>
+                        <article class="fact-card">
+                            <!--                        <span class="fact-card__icon">-->
+                            <!--                            <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                            <!--                                <use href="#icon-truck"></use>-->
+                            <!--                            </svg>-->
+                            <!--                        </span>-->
+                            <h3>Выезд к машине</h3>
+                            <p>Помогаем не только со склада, но и на месте поломки.</p>
+                        </article>
+                    </div>
+                </div>
+
+
+            </aside>
+        </div>
+    </section>
+
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Порядок работы</p>
+                <h2>Как мы работаем</h2>
+                <p class="section-heading__intro">
+                    Сценарий короткий и понятный: вы звоните, мы уточняем поломку, подбираем решение и согласуем
+                    передачу.
+                </p>
+            </div>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-card__head">
+                        <span class="step-card__number">01</span>
+                        <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                                href="#icon-phone"></use></svg></span>
+                    </div>
+                    <h3>Звонок</h3>
+                    <p>Сообщаете марку и модель, что случилось и где вы находитесь по маршруту.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-card__head">
+                        <span class="step-card__number">02</span>
+                        <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                                href="#icon-box"></use></svg></span>
+                    </div>
+                    <h3>Подбор</h3>
+                    <p>Проверяем наличие и аналоги, согласуем вариант по телефону без публикации цен на сайте.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-card__head">
+                        <span class="step-card__number">03</span>
+                        <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                                href="#icon-truck"></use></svg></span>
+                    </div>
+                    <h3>Отгрузка или выезд</h3>
+                    <p>Собираем нужные детали или организуем выезд к машине, если проблема требует помощи на месте.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-card__head">
+                        <span class="step-card__number">04</span>
+                        <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                                href="#icon-route"></use></svg></span>
+                    </div>
+                    <h3>Доставка или помощь</h3>
+                    <p>Привозим в город, на трассу или по согласованной геолокации клиента.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-card__head">
+                        <span class="step-card__number">05</span>
+                        <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                                href="#icon-shield"></use></svg></span>
+                    </div>
+                    <h3>Оплата</h3>
+                    <p>Согласуем удобный вариант по телефону: счёт, QR-код или другой способ по договорённости.</p>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a class="button button--primary" href="tel:+79876543210">
+                    <span class="button__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <use href="#icon-phone"></use>
+                        </svg>
+                    </span>
+                    <span>Позвонить и назвать точку</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Ориентиры по времени</p>
+                <h2>Сроки поставки</h2>
+                <p class="section-heading__intro">
+                    Даём ориентиры по времени без жёстких обещаний. Точный срок зависит от наличия и точки передачи.
+                </p>
+            </div>
+            <div class="timing-grid">
+                <article class="timing-card">
+                    <span class="timing-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                            href="#icon-clock"></use></svg></span>
+                    <h3>Заказ вечером</h3>
+                    <p>Ориентир прибытия к 10:00 в Таганрог.</p>
+                </article>
+                <article class="timing-card">
+                    <span class="timing-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                            href="#icon-clock"></use></svg></span>
+                    <h3>Заказ до 12:00</h3>
+                    <p>Ориентир прибытия до 15:00 в Таганрог.</p>
+                </article>
+                <article class="timing-card">
+                    <span class="timing-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                            href="#icon-spark"></use></svg></span>
+                    <h3>Срочный заказ</h3>
+                    <p>Можем отправить курьера в сторону Крыма и подсказать ближайший вариант доставки.</p>
+                </article>
+            </div>
+            <p class="timing-note">Окончательные сроки зависят от наличия и точки доставки — уточняйте по телефону.</p>
+            <div class="section-cta">
+                <a class="button button--secondary" href="tel:+79876543210">
+                    <span class="button__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <use href="#icon-phone"></use>
+                        </svg>
+                    </span>
+                    <span>Уточнить срок по телефону</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--white" id="delivery-zone">
+        <div class="container zone-layout">
+            <div>
+                <div class="section-heading">
+                    <p class="section-heading__eyebrow">Маршрут и точки передачи</p>
+                    <h2>Зона доставки по маршруту Ростов-на-Дону — Чонгар</h2>
+                    <p class="section-heading__intro">
+                        Работаем по ключевому маршруту и можем согласовать передачу не только в городе, но и прямо на
+                        трассе.
+                    </p>
+                </div>
+                <div class="mode-list">
+                    <div class="mode-list__item">
+                        <!--                        <span class="mode-list__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                        <!--                                href="#icon-route"></use></svg></span>-->
+                        <span>В городе</span>
+                    </div>
+                    <div class="mode-list__item">
+                        <!--                        <span class="mode-list__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                        <!--                                href="#icon-route"></use></svg></span>-->
+                        <span>На трассе</span>
+                    </div>
+                    <div class="mode-list__item">
+                        <!--                        <span class="mode-list__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                        <!--                                href="#icon-route"></use></svg></span>-->
+                        <span>По согласованной геолокации</span>
+                    </div>
+                </div>
+                <div class="section-cta section-cta--left">
+                    <a class="button button--primary" href="tel:+79876543210">
+                        <span class="button__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-phone"></use>
+                            </svg>
+                        </span>
+                        <span>Позвонить и назвать точку</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="zone-map">
+                <div class="zone-map__rail" aria-hidden="true"></div>
+                <div class="zone-map__stop"><span class="zone-map__marker">01</span><span class="zone-map__city">Ростов-на-Дону</span>
+                </div>
+                <div class="zone-map__stop"><span class="zone-map__marker">02</span><span class="zone-map__city">Таганрог</span>
+                </div>
+                <div class="zone-map__stop"><span class="zone-map__marker">03</span><span class="zone-map__city">Мариуполь</span>
+                </div>
+                <div class="zone-map__stop"><span class="zone-map__marker">04</span><span class="zone-map__city">Бердянск</span>
+                </div>
+                <div class="zone-map__stop"><span class="zone-map__marker">05</span><span class="zone-map__city">Приморск</span>
+                </div>
+                <div class="zone-map__stop"><span class="zone-map__marker">06</span><span class="zone-map__city">Мелитополь</span>
+                </div>
+                <div class="zone-map__stop"><span class="zone-map__marker">07</span><span class="zone-map__city">Новоалексеевка</span>
+                </div>
+                <div class="zone-map__stop"><span class="zone-map__marker">08</span><span
+                        class="zone-map__city">Чонгар</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--surface">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Что можно решить у нас</p>
+                <h2>Услуги</h2>
+                <p class="section-heading__intro">
+                    Помогаем не только с подбором детали. Если нужно, подключаем диагностику, выезд и ремонт, чтобы
+                    закрыть проблему целиком.
+                </p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card">
+                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
+                            href="#icon-box"></use></svg></span>
+                    <h3>Подбор запчастей</h3>
+                    <p>Подберём под марку, модель и характер поломки.</p></article>
+                <article class="service-card">
+                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-route"></use></svg></span>-->
+                    <h3>Доставка на трассу</h3>
+                    <p>Согласуем точку передачи по маршруту Ростов-на-Дону → Чонгар.</p></article>
+                <article class="service-card">
+                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-truck"></use></svg></span>-->
+                    <h3>Выезд к машине</h3>
+                    <p>Организуем помощь на месте, если нужно быстрее решить проблему в дороге.</p></article>
+                <article class="service-card">
+                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-tool"></use></svg></span>-->
+                    <h3>Диагностика</h3>
+                    <p>Поможем понять, что вышло из строя и что нужно в первую очередь.</p></article>
+                <article class="service-card">
+                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <h3>Ремонт на выезде</h3>
+                    <p>Выполним работы на трассе, если поломку можно устранить без сервиса.</p></article>
+                <article class="service-card"><span class="service-card__icon"><svg viewBox="0 0 24 24"
+                                                                                    aria-hidden="true"><use
+                        href="#icon-shield"></use></svg></span>
+                    <h3>Сервис в Таганроге</h3>
+                    <p>Есть собственная база для более сложных случаев и дальнейшего ремонта.</p></article>
+                <article class="service-card"><span class="service-card__icon"><svg viewBox="0 0 24 24"
+                                                                                    aria-hidden="true"><use
+                        href="#icon-spark"></use></svg></span>
+                    <h3>Запуск замёрзших авто</h3>
+                    <p>Помогаем вернуть грузовик в работу в холодную погоду.</p></article>
+                <article class="service-card"><span class="service-card__icon"><svg viewBox="0 0 24 24"
+                                                                                    aria-hidden="true"><use
+                        href="#icon-phone"></use></svg></span>
+                    <h3>Помощь с аккумулятором</h3>
+                    <p>Разберёмся с разряженным аккумулятором и подскажем следующий шаг.</p></article>
+                <article class="service-card">
+                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-truck"></use></svg></span>-->
+                    <h3>Грузовой эвакуатор</h3>
+                    <p>Организуем перевозку, если дальше ехать опасно или невозможно.</p></article>
+            </div>
+            <div class="section-cta">
+                <a class="button button--primary" href="tel:+79876543210">
+                    <span class="button__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <use href="#icon-phone"></use>
+                        </svg>
+                    </span>
+                    <span>Позвонить и описать проблему</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Ассортимент по маркам</p>
+                <h2>Марки грузовых авто</h2>
+                <p class="section-heading__intro">
+                    Работаем с европейскими, российскими и китайскими грузовыми автомобилями. Подберём под вашу марку —
+                    звоните.
+                </p>
+            </div>
+            <div class="brands-grid">
+                <article class="brand-group">
+                    <h3>Европейские грузовые</h3>
+                    <ul>
+                        <li>Volvo</li>
+                        <li>Scania</li>
+                        <li>MAN</li>
+                        <li>DAF</li>
+                        <li>Mercedes-Benz Trucks</li>
+                        <li>Iveco</li>
+                        <li>Renault Trucks</li>
+                        <li>Ford Trucks</li>
+                    </ul>
+                </article>
+                <article class="brand-group">
+                    <h3>Российские / СНГ</h3>
+                    <ul>
+                        <li>КАМАЗ</li>
+                        <li>ГАЗ</li>
+                        <li>Урал</li>
+                        <li>МАЗ</li>
+                    </ul>
+                </article>
+                <article class="brand-group">
+                    <h3>Китайские грузовые</h3>
+                    <ul>
+                        <li>Shacman</li>
+                        <li>HOWO</li>
+                        <li>FAW</li>
+                        <li>JAC</li>
+                        <li>Sitrak</li>
+                        <li>Foton</li>
+                        <li>Dongfeng</li>
+                        <li>Hongyan</li>
+                    </ul>
+                </article>
+                <article class="brand-group">
+                    <h3>Пассажирские автобусы</h3>
+                    <ul>
+                        <li>ПАЗ</li>
+                        <li>ЛиАЗ</li>
+                        <li>НЕФАЗ</li>
+                        <li>КАВЗ</li>
+                        <li>Mercedes-Benz</li>
+                        <li>MAN</li>
+                        <li>Volvo</li>
+                        <li>Scania</li>
+                        <li>Setra</li>
+                        <li>Neoplan</li>
+                        <li>Yutong</li>
+                        <li>Higer</li>
+                        <li>King Long</li>
+                        <li>ZhongTong</li>
+                        <li>Golden Dragon</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a class="button button--secondary" href="tel:+79876543210">
+                    <span class="button__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <use href="#icon-phone"></use>
+                        </svg>
+                    </span>
+                    <span>Уточнить по своей марке по телефону</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-heading__eyebrow">Типовые поломки</p>
+                <h2>Часто ломается в дороге</h2>
+                <p class="section-heading__intro">Типовые позиции, которые чаще всего нужны срочно на маршруте.</p>
+            </div>
+            <div class="failures-grid">
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Тормоза: колодки, накладки, суппорт, ремкомплект</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Подшипники ступицы</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Ремни и ролики</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Патрубки, шланги, хомуты</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Фильтры: топливный, масляный, воздушный</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Стартер и генератор</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Сцепление: комплект, выжимной</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Пневмосистема: клапаны, фитинги, трубки, краны</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Датчики двигателя, пневмосистемы, давления, тормозов и КПП</p></article>
+                <article class="failure-card">
+                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
+                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <p>Турбина и патрубки наддува</p></article>
+            </div>
+            <p class="failures-footer">Не нашли свою позицию? Звоните — подберём аналог.</p>
+            <div class="section-cta">
+                <a class="button button--primary" href="tel:+79876543210">
+                    <span class="button__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <use href="#icon-phone"></use>
+                        </svg>
+                    </span>
+                    <span>Позвонить и подобрать запчасть</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--accent">
+        <div class="container contact-shell">
+            <div class="contact-shell__content">
+                <div class="section-heading">
+                    <h2>Контакт и действия</h2>
+                    <p class="section-heading__intro">Все детали, сроки, наличие и способы оплаты согласуем по
+                        телефону.</p>
+                </div>
+                <a class="contact-shell__phone" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                <div class="contact-shell__actions">
+                    <span>Подбор запчасти</span>
+                    <span>Диагностика и ремонт</span>
+                    <span>Выезд к машине</span>
+                    <span>Консультация</span>
+                    <span>Оформление доставки на трассу</span>
+                    <span>Оплата по договорённости</span>
+                    <span>Согласование счёта или QR-кода</span>
+                    <span>Уточнение геолокации для передачи</span>
+                </div>
+                <div class="section-cta section-cta--left">
+                    <a class="button button--primary" href="tel:+79876543210">
+                        <span class="button__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-phone"></use>
+                            </svg>
+                        </span>
+                        <span>Позвонить</span>
+                    </a>
+                </div>
+                <p class="contact-shell__note">Хотите работать курьером? Позвоните.</p>
+            </div>
+            <div class="contact-shell__summary">
+                <div class="summary-card">
+                    <!--                    <span class="summary-card__icon">-->
+                    <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                    <!--                            <use href="#icon-route"></use>-->
+                    <!--                        </svg>-->
+                    <!--                    </span>-->
+                    <h3>Преимущества</h3>
+                    <p>Ростов-на-Дону → Таганрог → Мариуполь → Бердянск → Приморск → Мелитополь → Новоалексеевка →
+                        Чонгар</p>
+                </div>
+                <div class="summary-card">
+                    <!--                    <span class="summary-card__icon">-->
+                    <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                    <!--                            <use href="#icon-truck"></use>-->
+                    <!--                        </svg>-->
+                    <!--                    </span>-->
+                    <h3>Преимущества</h3>
+                    <p>Помощь на месте, передача на трассе и собственный сервис в Таганроге.</p>
+                </div>
+                <div class="summary-card">
+                    <!--                    <span class="summary-card__icon">-->
+                    <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
+                    <!--                            <use href="#icon-shield"></use>-->
+                    <!--                        </svg>-->
+                    <!--                    </span>-->
+                    <h3>Преимущества</h3>
+                    <p>Никаких форм и прайсов. Быстрый сценарий: звонок, уточнение, решение.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container page-footer__inner">
+        <div>
+            <p class="page-footer__brand">Запчасти Сегодня</p>
+            <p>Подбор по телефону. Цены, условия, наличие и сроки уточняйте по звонку.</p>
+        </div>
+        <a class="page-footer__phone" href="tel:+79876543210">+7 (987) 654-32-10</a>
+    </div>
+</footer>
+
+<a class="sticky-call" href="tel:+79876543210">
+    <span class="sticky-call__icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <use href="#icon-phone"></use>
+        </svg>
+    </span>
+    <span>Позвонить</span>
+</a>
+</body>
+</html>

@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Oswald:wght@500;600;700&display=swap");
 
 :root {
+    --main-font: 'Montserrat';
+    --addiction-font: 'NunitoSans';
+
     --color-white: #ffffff;
     --color-bg: #f2f3f7;
     --color-surface: #f7f8fc;
@@ -42,7 +45,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Manrope", "Trebuchet MS", sans-serif;
+    font-family: var(--main-font, 'Comfortaa'), sans-serif;
     color: var(--color-text);
 }
 
@@ -124,22 +127,6 @@ select {
     color: rgba(255, 255, 255, 0.88);
 }
 
-.brand-lockup__mark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /*width: 180px;*/
-    /*height: 52px;*/
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.08);
-    font-family: "Oswald", "Arial Narrow", sans-serif;
-    font-size: 1.35rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 8px;
-}
-
 .brand-lockup__title,
 .brand-lockup__meta,
 .hero__eyebrow,
@@ -182,7 +169,6 @@ select {
     border: 1px solid rgba(255, 255, 255, 0.18);
     color: var(--color-white);
     font-weight: 700;
-    backdrop-filter: blur(8px);
 }
 
 .hero__content,
@@ -221,14 +207,13 @@ select {
 .contact-shell__phone,
 .page-footer__brand {
     margin: 0;
-    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-family: var(--main-font, 'Comfortaa'), sans-serif;
     line-height: 1.10;
     letter-spacing: 0.01em;
 }
 
 .hero h1 {
     margin: 20px 0 18px;
-    /*max-width: 12ch;*/
     font-size: clamp(2.6rem, 7vw, 5.9rem);
     text-transform: uppercase;
 }
@@ -259,7 +244,6 @@ select {
     border: 1px solid rgba(255, 255, 255, 0.14);
     background: rgba(255, 255, 255, 0.08);
     color: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(12px);
 }
 
 .mini-pill__icon,
@@ -306,7 +290,7 @@ select {
     align-items: center;
     gap: 14px;
     margin-top: 26px;
-    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-family: var(--addiction-font, 'Comfortaa'), sans-serif;
     font-size: clamp(2rem, 7vw, 3.1rem);
     letter-spacing: 0.03em;
 }
@@ -342,7 +326,6 @@ select {
 .button--primary {
     background: linear-gradient(180deg, var(--color-accent-orange) 0%, var(--color-accent-orange-dark) 100%);
     color: var(--color-white);
-    /*box-shadow: 0 20px 44px rgba(243, 139, 16, 0.28);*/
 }
 
 .button--secondary {
@@ -355,7 +338,6 @@ select {
     background: var(--color-white);
     border-color: var(--color-border);
     color: var(--color-primary);
-    /*box-shadow: 0 14px 30px var(--color-shadow);*/
 }
 
 .route-link {
@@ -395,7 +377,6 @@ select {
 .summary-card {
     border-radius: var(--radius-md);
     background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(16px);
 }
 
 .hero-panel__rule {
@@ -508,7 +489,7 @@ select {
     border-radius: 999px;
     background: linear-gradient(180deg, #ffcf92 0%, #f38b10 100%);
     color: #0d234d;
-    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-family: var(--addiction-font, 'Comfortaa'), sans-serif;
     font-size: 0.92rem;
     letter-spacing: 0.08em;
     z-index: 2;
@@ -593,11 +574,20 @@ select {
 .steps-grid,
 .timing-grid,
 .service-grid,
-.brands-grid,
 .failures-grid {
     display: grid;
     gap: 16px;
     margin-top: 28px;
+}
+
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.brand-group {
+    flex: 1 1 280px;
 }
 
 .step-card,
@@ -616,7 +606,6 @@ select {
     color: var(--color-text);
     background: var(--color-white);
     border: 1px solid var(--color-border);
-    /*box-shadow: 0 16px 36px var(--color-shadow);*/
 }
 
 .section--surface .service-card,
@@ -718,7 +707,6 @@ select {
     border-radius: var(--radius-lg);
     background: linear-gradient(180deg, rgba(23, 52, 111, 0.96), rgba(16, 34, 76, 0.98)),
     var(--color-primary);
-    /*box-shadow: 0 20px 44px var(--color-shadow-strong);*/
 }
 
 .zone-map__rail {
@@ -748,19 +736,50 @@ select {
 }
 
 .brand-group ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 16px;
 }
 
-.brand-group li {
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: var(--color-surface-soft);
-    color: var(--color-primary);
-    font-weight: 700;
+.brand-group .brand-group-list {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
 }
+
+
+@media (min-width: 950px) {
+    .brand-group .brand-group-list_bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 32px;
+        margin-top: 16px;
+    }
+}
+
+.brand-group li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.brand-group li span {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--color-text);
+}
+
+.brand-chip__icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
 
 .failure-card {
     display: flex;
@@ -833,7 +852,6 @@ select {
     background: linear-gradient(180deg, var(--color-accent-orange) 0%, var(--color-accent-orange-dark) 100%);
     color: var(--color-white);
     font-weight: 800;
-    /*box-shadow: 0 20px 40px rgba(243, 139, 16, 0.34);*/
 }
 
 .sticky-call__icon {
@@ -843,22 +861,6 @@ select {
 
 .hero-panel {
     animation-delay: 80ms;
-}
-
-.steps-grid .step-card:nth-child(2),
-.timing-grid .timing-card:nth-child(2),
-.service-grid .service-card:nth-child(2),
-.brands-grid .brand-group:nth-child(2),
-.failures-grid .failure-card:nth-child(2) {
-    animation-delay: 80ms;
-}
-
-.steps-grid .step-card:nth-child(3),
-.timing-grid .timing-card:nth-child(3),
-.service-grid .service-card:nth-child(3),
-.brands-grid .brand-group:nth-child(3),
-.failures-grid .failure-card:nth-child(3) {
-    animation-delay: 140ms;
 }
 
 @media (min-width: 760px) {

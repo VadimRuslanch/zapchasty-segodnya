@@ -1,6 +1,7 @@
 ﻿<!doctype html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="src/fonts/fonts.css">
     <link rel="stylesheet" href="/src/style.css">
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -51,17 +52,17 @@
         <path d="m9.5 12 1.8 1.8 3.7-4"/>
     </symbol>
 </svg>
-
+<header class="topbar container">
+    <div class="brand-lockup">
+        <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
+    </div>
+    <nav>
+        Меню для быстрого перехода между разделами
+    </nav>
+    <a class="button button--primary" href="tel:+79876543210">+7 (987) 654-32-10</a>
+</header>
 <main class="page-shell">
-    <header class="topbar container">
-        <div class="brand-lockup">
-            <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
-        </div>
-        <nav>
-            Меню для быстрого перехода между разделами
-        </nav>
-        <a class="button button--primary" href="tel:+79876543210">+7 (987) 654-32-10</a>
-    </header>
+
     <section class="hero">
         <div class="hero__backdrop" aria-hidden="true"></div>
         <div class="hero__grid container">
@@ -439,56 +440,189 @@
                 <article class="brand-group">
                     <h3>Европейские грузовые</h3>
                     <ul>
-                        <li>Volvo</li>
-                        <li>Scania</li>
-                        <li>MAN</li>
-                        <li>DAF</li>
-                        <li>Mercedes-Benz Trucks</li>
-                        <li>Iveco</li>
-                        <li>Renault Trucks</li>
-                        <li>Ford Trucks</li>
+
+                        <li>
+                            <img class="brand-chip__icon" src="src/icons/europe/scania.svg" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Scania</span>
+                        </li>
+                        <li>
+                            <img class="brand-chip__icon" src="src/icons/europe/volvo.svg" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Volvo</span>
+                        </li>
+                        <li>
+                            <img class="brand-chip__icon" src="src/icons/europe/man.svg" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>MAN</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/europe/daf.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>DAF</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/europe/mercedes.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Mercedes-Benz</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/europe/iveco.svg" alt="" class="brand-chip__icon" loading="lazy"
+                                 decoding="async">
+                            <span>Iveco</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/europe/renault.svg" alt="" class="brand-chip__icon" loading="lazy"
+                                 decoding="async">
+                            <span>Renault Trucks</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/europe/ford.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Ford Trucks</span>
+                        </li>
                     </ul>
                 </article>
                 <article class="brand-group">
                     <h3>Российские / СНГ</h3>
                     <ul>
-                        <li>КАМАЗ</li>
-                        <li>ГАЗ</li>
-                        <li>Урал</li>
-                        <li>МАЗ</li>
+                        <li>
+                            <img class="brand-chip__icon" src="src/icons/ru/kamaz.svg" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>КАМАЗ</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/ru/ural.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Урал</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/ru/gaz.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>ГАЗ</span>
+                        </li>
+
+                        <li>
+                            <img src="src/icons/ru/maz.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>МАЗ</span>
+                        </li>
                     </ul>
                 </article>
                 <article class="brand-group">
                     <h3>Китайские грузовые</h3>
                     <ul>
-                        <li>Shacman</li>
-                        <li>HOWO</li>
-                        <li>FAW</li>
-                        <li>JAC</li>
-                        <li>Sitrak</li>
-                        <li>Foton</li>
-                        <li>Dongfeng</li>
-                        <li>Hongyan</li>
+                        <li>
+                            <img src="src/icons/chine/shacman.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Shacman</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/chine/howo.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>HOWO</span></li>
+                        <li>
+                            <img src="src/icons/chine/faw.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>FAW</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/chine/jac.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>JAC</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/chine/sitrak.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Sitrak</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/chine/foton.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Foton</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/chine/dongfeng.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Dongfeng</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/chine/hongyan.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Hongyan</span>
+                        </li>
                     </ul>
                 </article>
                 <article class="brand-group">
                     <h3>Пассажирские автобусы</h3>
-                    <ul>
-                        <li>ПАЗ</li>
-                        <li>ЛиАЗ</li>
-                        <li>НЕФАЗ</li>
-                        <li>КАВЗ</li>
-                        <li>Mercedes-Benz</li>
-                        <li>MAN</li>
-                        <li>Volvo</li>
-                        <li>Scania</li>
-                        <li>Setra</li>
-                        <li>Neoplan</li>
-                        <li>Yutong</li>
-                        <li>Higer</li>
-                        <li>King Long</li>
-                        <li>ZhongTong</li>
-                        <li>Golden Dragon</li>
+                    <ul class="brand-group-list brand-group-list_bottom">
+                        <li>
+                            <img src="src/icons/paz.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>ПАЗ</span>
+                        </li>
+
+                        <li>
+                            <img src="src/icons/europe/mercedes.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Mercedes-Benz</span>
+                        </li>
+                        <li>
+                            <img class="brand-chip__icon" src="src/icons/europe/man.svg" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>MAN</span>
+
+                        <li>
+                            <img src="src/icons/europe/scania.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Scania</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/setra.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Setra</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/neoplan.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Neoplan</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/yutong.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Yutong</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/higer.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Higer</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/king-long.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+
+                            <span>King Long</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/liaz.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>ЛиАЗ</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/nefaz.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>НЕФАЗ</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/kavz.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>КАВЗ</span>
+                        </li>
+                        <li>
+                            <img src="src/icons/europe/volvo.svg" class="brand-chip__icon" alt="" loading="lazy"
+                                 decoding="async">
+                            <span>Volvo</span>
+                        </li>
                     </ul>
                 </article>
             </div>

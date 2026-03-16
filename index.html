@@ -6,7 +6,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description"
-          content="Запчасти, диагностика и ремонт грузовых авто с доставкой на трассу по маршруту Ростов-на-Дону → Чонгар. Звоните +7 (987) 654-32-10."
+          content="Запчасти, диагностика и ремонт грузовых авто с доставкой на трассу по маршруту Ростов-на-Дону → Чонгар. Звоните +7 (988) 578-84-84."
     />
     <meta name="theme-color" content="#17346f"/>
     <title>Запчасти Сегодня | Помощь грузовым авто на маршруте Ростов-на-Дону → Чонгар</title>
@@ -102,16 +102,28 @@
         <div class="brand-lockup">
             <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
         </div>
-        <nav>
-            Меню для быстрого перехода между разделами
+        <nav class="topbar-menu" aria-label="Разделы сайта">
+            <a class="topbar-menu__link" href="#workflow">Как работаем</a>
+            <a class="topbar-menu__link" href="#delivery-zone">Зона доставки</a>
+            <a class="topbar-menu__link" href="#services">Услуги</a>
+            <a class="topbar-menu__link" href="#brands">Марки авто</a>
+            <a class="topbar-menu__link" href="#contacts">Контакты</a>
         </nav>
-        <a class="button button--primary" href="tel:+79876543210">+7 (987) 654-32-10</a>
+        <div class="actions">
+            <a href="https://t.me/+79885788484" target="_blank" rel="noopener noreferrer" class="button--messenger">
+                <img src="src/icons/mess/telegram.svg" alt="логотип телеграмм">
+            </a>
+            <a href="https://max.ru/+79885788484" target="_blank" rel="noopener noreferrer" class="button--messenger">
+                <img src="src/icons/mess/MAX.svg" alt="логотип макс">
+            </a>
+            <a class="button button--primary" href="tel:+79885788484">+7 (988) 578-84-84</a>
+        </div>
     </div>
 </header>
 <main class="page-shell">
 
     <section class="hero">
-        <img class="hero__image" src="src/images/hero/1.png">
+        <img class="hero__image" src="src/images/hero/1.png" alt="Грузовик">
         <div class="hero__grid container">
             <div class="hero__content">
 
@@ -233,7 +245,7 @@
         </div>
     </section>
 
-    <section class="section section--white">
+    <section class="section section--white" id="workflow">
         <div class="gear-image gear-image--1">
             <img src="src/images/decor/gear.png" alt="Шестеренка">
         </div>
@@ -358,7 +370,7 @@
 
     <section class="section section--white" id="delivery-zone">
         <div class="section-delivery-image">
-            <img src="src/images/hero/3.png">
+            <img src="src/images/hero/3.png" alt="Карта">
         </div>
         <div class="container zone-layout">
             <div>
@@ -415,7 +427,7 @@
         </div>
     </section>
 
-    <section class="section section--surface">
+    <section class="section section--surface" id="services">
         <div class="container">
             <div class="section-heading">
                 <p class="section-heading__eyebrow">Что можно решить у нас</p>
@@ -539,7 +551,7 @@
         </div>
     </section>
 
-    <section class="section section--white">
+    <section class="section section--white" id="brands">
         <div class="gear-image gear-image--4">
             <img src="src/images/decor/gear.png" alt="Шестеренка">
         </div>
@@ -838,7 +850,7 @@
         </div>
     </section>
 
-    <section class="section section--accent">
+    <section class="section section--accent" id="contacts">
         <div class="container contact-shell">
             <div class="contact-shell__content">
                 <div class="section-heading">
@@ -846,7 +858,7 @@
                     <p class="section-heading__intro">Все детали, сроки, наличие и способы оплаты согласуем по
                         телефону.</p>
                 </div>
-                <a class="contact-shell__phone" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                <a class="contact-shell__phone" href="tel:+79885788484">+7 (988) 578-84-84</a>
                 <div class="contact-shell__actions">
                     <span>Подбор запчасти</span>
                     <span>Диагностика и ремонт</span>
@@ -867,50 +879,36 @@
                         <span>Позвонить</span>
                     </a>
                 </div>
-                <p class="contact-shell__note">Хотите работать курьером? Позвоните.</p>
             </div>
-            <!--            <div class="contact-shell__summary">-->
-            <!--                <div class="summary-card">-->
-            <!--                    &lt;!&ndash;                    <span class="summary-card__icon">&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                        <svg viewBox="0 0 24 24" aria-hidden="true">&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                            <use href="#icon-route"></use>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                        </svg>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
-            <!--                    <h3>Преимущества</h3>-->
-            <!--                    <p>Ростов-на-Дону → Таганрог → Мариуполь → Бердянск → Приморск → Мелитополь → Новоалексеевка →-->
-            <!--                        Чонгар</p>-->
-            <!--                </div>-->
-            <!--                <div class="summary-card">-->
-            <!--                    &lt;!&ndash;                    <span class="summary-card__icon">&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                        <svg viewBox="0 0 24 24" aria-hidden="true">&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                            <use href="#icon-truck"></use>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                        </svg>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
-            <!--                    <h3>Преимущества</h3>-->
-            <!--                    <p>Помощь на месте, передача на трассе и собственный сервис в Таганроге.</p>-->
-            <!--                </div>-->
-            <!--                <div class="summary-card">-->
-            <!--                    &lt;!&ndash;                    <span class="summary-card__icon">&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                        <svg viewBox="0 0 24 24" aria-hidden="true">&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                            <use href="#icon-shield"></use>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                        </svg>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
-            <!--                    <h3>Преимущества</h3>-->
-            <!--                    <p>Никаких форм и прайсов. Быстрый сценарий: звонок, уточнение, решение.</p>-->
-            <!--                </div>-->
-            <!--            </div>-->
         </div>
     </section>
 </main>
 
 <footer class="page-footer">
     <div class="container page-footer__inner">
-        <div>
-            <p class="page-footer__brand">Запчасти Сегодня</p>
-            <p>Подбор по телефону. Цены, условия, наличие и сроки уточняйте по звонку.</p>
+        <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
+        <nav class="page-footer__menu" aria-label="Разделы сайта">
+            <a class="topbar-menu__link" href="#workflow">Как работаем</a>
+            <a class="topbar-menu__link" href="#delivery-zone">Зона доставки</a>
+            <a class="topbar-menu__link" href="#services">Услуги</a>
+            <a class="topbar-menu__link" href="#brands">Марки авто</a>
+            <a class="topbar-menu__link" href="#contacts">Контакты</a>
+        </nav>
+        <div class="page-footer__company-details">
+            <h4>Реквизиты</h4>
+            <ul>
+                <li>
+                    <p>ОГРНИП: 317619600196882</p>
+                </li>
+                <li>
+                    <p>ИНН: 612307504244</p>
+                </li>
+            </ul>
         </div>
-        <a class="page-footer__phone" href="tel:+79876543210">+7 (987) 654-32-10</a>
+
     </div>
+
+
 </footer>
 
 <a class="sticky-call" href="tel:+79876543210">

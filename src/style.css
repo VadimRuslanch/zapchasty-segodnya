@@ -41,6 +41,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 106px;
 }
 
 body {
@@ -73,6 +74,12 @@ input,
 textarea,
 select {
     font: inherit;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .container {
@@ -139,7 +146,7 @@ select {
 
 .brand-lockup__logo {
     width: 200px;
-    height: 74px;
+    height: 60px;
     object-fit: cover;
 }
 
@@ -158,7 +165,6 @@ select {
     justify-content: space-between;
     gap: 16px;
     padding: 16px 0;
-    /*margin-bottom: 32px;*/
 }
 
 .brand-lockup {
@@ -166,6 +172,23 @@ select {
     align-items: center;
     gap: 14px;
     color: rgba(255, 255, 255, 0.88);
+}
+
+.topbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar-menu__link {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.topbar-menu__link:hover {
+    color: var(--color-primary);
 }
 
 .brand-lockup__title,
@@ -352,6 +375,11 @@ select {
     margin-top: 26px;
 }
 
+.actions {
+    display: flex;
+    gap: 16px;
+}
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -362,6 +390,13 @@ select {
     border-radius: 18px;
     font-weight: 800;
     letter-spacing: 0.01em;
+}
+
+.button--messenger {
+    display: block;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
 }
 
 .button--primary {
@@ -944,8 +979,14 @@ select {
 
 .page-footer__inner {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.page-footer__menu {
+    display: grid;
     gap: 16px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .page-footer__brand {
@@ -953,9 +994,51 @@ select {
     font-size: 1.4rem;
 }
 
+.page-footer__about {
+    max-width: 560px;
+}
+
 .page-footer__phone {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
     color: var(--color-white);
     font-weight: 800;
+}
+
+.page-footer__company-details {
+    display: grid;
+    gap: 16px;
+}
+
+.page-footer__company-details li {
+    margin-bottom: 8px;
+}
+
+.page-footer__company-details h4,
+.page-footer__company-details h2 {
+    margin: 0;
+    color: var(--color-white);
+    font-family: var(--main-font, 'Comfortaa'), sans-serif;
+}
+
+.page-footer__company-details h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.page-footer__company-details h2 {
+    margin-top: 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.page-footer__company-details p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 0.94rem;
+    line-height: 1.5;
+    word-break: break-word;
 }
 
 .sticky-call {
@@ -1028,9 +1111,13 @@ select {
     }
 
     .page-footer__inner {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        grid-template-columns: 200px 1fr 300px;
+        align-items: start;
+        column-gap: 20px;
+    }
+
+    .page-footer__company-details {
+        grid-column: 1 / -1;
     }
 
     .sticky-call {
@@ -1054,6 +1141,14 @@ select {
     .brands-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+
+    /*.page-footer__inner {*/
+    /*    grid-template-columns: minmax(300px, 1fr) auto minmax(360px, 1.1fr);*/
+    /*    align-items: start;*/
+    /*}*/
+    .page-footer__company-details {
+        grid-column: auto;
+    }
 }
 
 @media (max-width: 759px) {
@@ -1066,10 +1161,9 @@ select {
         font-size: clamp(1.9rem, 10vw, 2.7rem);
     }
 
-    .button {
-        width: 100%;
-    }
-
+    /*.button {*/
+    /*    width: 100%;*/
+    /*}*/
     .section {
         padding: 58px 0;
     }
@@ -1085,11 +1179,21 @@ select {
     .audience-card {
         padding: 20px;
     }
+
+    .page-footer__company-details h2 {
+        font-size: 1.05rem;
+    }
 }
 
 @media (min-width: 425px) {
     .hero-panel-info {
         flex-direction: row;
+    }
+}
+
+@media (max-width: 1195px) {
+    .topbar-menu {
+        display: none;
     }
 }
 

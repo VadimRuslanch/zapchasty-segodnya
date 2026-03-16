@@ -110,6 +110,7 @@
             <a class="topbar-menu__link" href="#contacts">Контакты</a>
         </nav>
         <div class="actions">
+
             <a href="https://t.me/+79885788484" target="_blank" rel="noopener noreferrer" class="button--messenger">
                 <img src="src/icons/mess/telegram.svg" alt="логотип телеграмм">
             </a>
@@ -117,9 +118,28 @@
                 <img src="src/icons/mess/MAX.svg" alt="логотип макс">
             </a>
             <a class="button button--primary" href="tel:+79885788484">+7 (988) 578-84-84</a>
+            <button class="topbar-menu-toggle" type="button" id="sidemenu-open" aria-expanded="false"
+                    aria-controls="sidemenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </div>
 </header>
+<dialog class="sidemenu" id="sidemenu" aria-label="Меню разделов сайта">
+    <div class="sidemenu__panel">
+        <button class="sidemenu__close" type="button" id="sidemenu-close" aria-label="Закрыть меню">×</button>
+        <nav class="sidemenu__nav" aria-label="Навигация по разделам">
+            <a class="sidemenu__link" href="#workflow">Как работаем</a>
+            <a class="sidemenu__link" href="#delivery-zone">Зона доставки</a>
+            <a class="sidemenu__link" href="#services">Услуги</a>
+            <a class="sidemenu__link" href="#brands">Марки авто</a>
+            <a class="sidemenu__link" href="#contacts">Контакты</a>
+        </nav>
+        <a class="button button--primary sidemenu__phone" href="tel:+79885788484">+7 (988) 578-84-84</a>
+    </div>
+</dialog>
 <main class="page-shell">
 
     <section class="hero">
@@ -537,6 +557,9 @@
                     </div>
                     <p>Организуем перевозку, если дальше ехать опасно или невозможно.</p>
                 </article>
+                <div class="service-card service-card--image">
+                    <img src="src/images/hero/2.png">
+                </div>
             </div>
             <div class="section-cta">
                 <a class="button button--primary" href="tel:+79876543210">
@@ -919,5 +942,45 @@
     </span>
     <span>Позвонить</span>
 </a>
+<script>
+    (() => {
+        const sideMenu = document.getElementById('sidemenu');
+        const openBtn = document.getElementById('sidemenu-open');
+        const closeBtn = document.getElementById('sidemenu-close');
+        const sideMenuLinks = sideMenu ? sideMenu.querySelectorAll('.sidemenu__link') : [];
+
+        if (!sideMenu || !openBtn || !closeBtn) {
+            return;
+        }
+
+        const closeMenu = () => {
+            if (sideMenu.open) {
+                sideMenu.close();
+            }
+            openBtn.setAttribute('aria-expanded', 'false');
+        };
+
+        openBtn.addEventListener('click', () => {
+            sideMenu.showModal();
+            openBtn.setAttribute('aria-expanded', 'true');
+        });
+
+        closeBtn.addEventListener('click', closeMenu);
+
+        sideMenu.addEventListener('close', () => {
+            openBtn.setAttribute('aria-expanded', 'false');
+        });
+
+        sideMenu.addEventListener('click', (event) => {
+            if (event.target === sideMenu) {
+                closeMenu();
+            }
+        });
+
+        sideMenuLinks.forEach((link) => {
+            link.addEventListener('click', closeMenu);
+        });
+    })();
+</script>
 </body>
 </html>

@@ -741,7 +741,16 @@ ul, li {
 }
 
 .gear-image--4 {
+    right: 0;
+    bottom: 0;
+    width: min(34vw, 320px);
+    transform: translate(28%, 34%);
+}
 
+.gear-image--5,
+.gear-image--6,
+.gear-image--7 {
+    display: none;
 }
 
 .gear-image img {
@@ -1310,6 +1319,49 @@ ul, li {
 
     .page-footer__company-details h2 {
         font-size: 1.05rem;
+    }
+
+    .gear-image--4 {
+        width: 180px;
+        right: -70px;
+        bottom: 24px;
+        transform: none;
+        pointer-events: none;
+    }
+
+    .gear-image--4 img {
+        opacity: 0.06;
+    }
+
+    .gear-image--5,
+    .gear-image--6,
+    .gear-image--7 {
+        display: block;
+        pointer-events: none;
+    }
+
+    .gear-image--5 {
+        top: 88px;
+        left: -52px;
+        width: 120px;
+    }
+
+    .gear-image--6 {
+        top: 36%;
+        right: -58px;
+        width: 130px;
+    }
+
+    .gear-image--7 {
+        bottom: 110px;
+        left: 8%;
+        width: 95px;
+    }
+
+    .gear-image--5 img,
+    .gear-image--6 img,
+    .gear-image--7 img {
+        opacity: 0.05;
     }
 
     .service-grid {

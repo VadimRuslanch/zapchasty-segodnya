@@ -51,20 +51,67 @@
         <path d="M12 3 5 6v5c0 5 3 8.5 7 10 4-1.5 7-5 7-10V6l-7-3Z"/>
         <path d="m9.5 12 1.8 1.8 3.7-4"/>
     </symbol>
+    <symbol id="car-crane" viewBox="0 0 24 24">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M7 18h8m4 0h2v-6a5 5 0 0 0 -5 -5h-1l1.5 5h4.5"/>
+        <path d="M12 18v-11h3"/>
+        <path d="M3 17v-5h9"/>
+        <path d="M4 12v-6l18 -3v2"/>
+        <path d="M8 12v-4l-4 -2"/>
+    </symbol>
+    <symbol id="road" viewBox="0 0 24 24">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 19l4 -14"/>
+        <path d="M16 5l4 14"/>
+        <path d="M12 8v-2"/>
+        <path d="M12 13v-2"/>
+        <path d="M12 18v-2"/>
+    </symbol>
+    <symbol id="car-crash" viewBox="0 0 24 24">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M8 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M7 6l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-5m0 -6h8m-6 0v-5m2 0h-4"/>
+        <path d="M14 8v-2"/>
+        <path d="M19 12h2"/>
+        <path d="M17.5 15.5l1.5 1.5"/>
+        <path d="M17.5 8.5l1.5 -1.5"/>
+    </symbol>
+    <symbol id="tool" viewBox="0 0 24 24">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/>
+    </symbol>
+    <symbol id="hammer" viewBox="0 0 24 24">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M11.414 10l-7.383 7.418a2.091 2.091 0 0 0 0 2.967a2.11 2.11 0 0 0 2.976 0l7.407 -7.385"/>
+        <path d="M18.121 15.293l2.586 -2.586a1 1 0 0 0 0 -1.414l-7.586 -7.586a1 1 0 0 0 -1.414 0l-2.586 2.586a1 1 0 0 0 0 1.414l7.586 7.586a1 1 0 0 0 1.414 0"/>
+    </symbol>
+    <symbol id="battery" viewBox="0 0 24 24">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2l0 -10"/>
+        <path d="M6 5v-2"/>
+        <path d="M18 3v2"/>
+        <path d="M6.5 12h3"/>
+        <path d="M14.5 12h3"/>
+        <path d="M16 10.5v3"/>
+    </symbol>
 </svg>
-<header class="topbar container">
-    <div class="brand-lockup">
-        <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
+<header class="header">
+    <div class="topbar container">
+        <div class="brand-lockup">
+            <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
+        </div>
+        <nav>
+            Меню для быстрого перехода между разделами
+        </nav>
+        <a class="button button--primary" href="tel:+79876543210">+7 (987) 654-32-10</a>
     </div>
-    <nav>
-        Меню для быстрого перехода между разделами
-    </nav>
-    <a class="button button--primary" href="tel:+79876543210">+7 (987) 654-32-10</a>
 </header>
 <main class="page-shell">
 
     <section class="hero">
-        <div class="hero__backdrop" aria-hidden="true"></div>
+        <img class="hero__image" src="src/images/hero/1.png">
         <div class="hero__grid container">
             <div class="hero__content">
 
@@ -187,6 +234,12 @@
     </section>
 
     <section class="section section--white">
+        <div class="gear-image gear-image--1">
+            <img src="src/images/decor/gear.png" alt="Шестеренка">
+        </div>
+        <div class="gear-image gear-image--2">
+            <img src="src/images/decor/gear.png" alt="Шестеренка">
+        </div>
         <div class="container">
             <div class="section-heading">
                 <p class="section-heading__eyebrow">Порядок работы</p>
@@ -280,6 +333,9 @@
                         геолокации.</p>
                 </article>
                 <article class="timing-card">
+                    <div class="gear-image gear-image--3">
+                        <img src="src/images/decor/gear.png" alt="Шестеренка">
+                    </div>
                     <span class="timing-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
                             href="#icon-spark"></use></svg></span>
                     <h3>Срочный заказ</h3>
@@ -301,6 +357,9 @@
     </section>
 
     <section class="section section--white" id="delivery-zone">
+        <div class="section-delivery-image">
+            <img src="src/images/hero/3.png">
+        </div>
         <div class="container zone-layout">
             <div>
                 <div class="section-heading">
@@ -368,50 +427,104 @@
             </div>
             <div class="service-grid">
                 <article class="service-card">
-                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use
-                            href="#icon-box"></use></svg></span>
-                    <h3>Подбор запчастей</h3>
-                    <p>Подберём под марку, модель и характер поломки.</p></article>
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-box"></use>
+                            </svg>
+                        </span>
+                        <h3>Подбор запчастей</h3>
+                    </div>
+                    <p>Подберём под марку, модель и характер поломки.</p>
+                </article>
                 <article class="service-card">
-                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-route"></use></svg></span>-->
-                    <h3>Доставка на трассу</h3>
-                    <p>Согласуем точку передачи по маршруту Ростов-на-Дону → Чонгар.</p></article>
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#road"></use>
+                            </svg>
+                        </span>
+                        <h3>Доставка на трассу</h3>
+                    </div>
+                    <p>Согласуем точку передачи по маршруту Ростов-на-Дону → Чонгар.</p>
+                </article>
                 <article class="service-card">
-                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-truck"></use></svg></span>-->
-                    <h3>Выезд к машине</h3>
-                    <p>Организуем помощь на месте, если нужно быстрее решить проблему в дороге.</p></article>
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#car-crash"></use>
+                            </svg>
+                        </span>
+                        <h3>Выезд к машине</h3>
+                    </div>
+                    <p>Организуем помощь на месте, если нужно быстрее решить проблему в дороге.</p>
+                </article>
                 <article class="service-card">
-                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-tool"></use></svg></span>-->
-                    <h3>Диагностика</h3>
-                    <p>Поможем понять, что вышло из строя и что нужно в первую очередь.</p></article>
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#tool"></use>
+                            </svg>
+                        </span>
+                        <h3>Диагностика</h3>
+                    </div>
+                    <p>Поможем понять, что вышло из строя и что нужно в первую очередь.</p>
+                </article>
                 <article class="service-card">
-                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <h3>Ремонт на выезде</h3>
-                    <p>Выполним работы на трассе, если поломку можно устранить без сервиса.</p></article>
-                <article class="service-card"><span class="service-card__icon"><svg viewBox="0 0 24 24"
-                                                                                    aria-hidden="true"><use
-                        href="#icon-shield"></use></svg></span>
-                    <h3>Сервис в Таганроге</h3>
-                    <p>Есть собственная база для более сложных случаев и дальнейшего ремонта.</p></article>
-                <article class="service-card"><span class="service-card__icon"><svg viewBox="0 0 24 24"
-                                                                                    aria-hidden="true"><use
-                        href="#icon-spark"></use></svg></span>
-                    <h3>Запуск замёрзших авто</h3>
-                    <p>Помогаем вернуть грузовик в работу в холодную погоду.</p></article>
-                <article class="service-card"><span class="service-card__icon"><svg viewBox="0 0 24 24"
-                                                                                    aria-hidden="true"><use
-                        href="#icon-phone"></use></svg></span>
-                    <h3>Помощь с аккумулятором</h3>
-                    <p>Разберёмся с разряженным аккумулятором и подскажем следующий шаг.</p></article>
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#hammer"></use>
+                            </svg>
+                        </span>
+                        <h3>Ремонт на выезде</h3>
+                    </div>
+                    <p>Выполним работы на трассе, если поломку можно устранить без сервиса.</p>
+                </article>
                 <article class="service-card">
-                    <!--                    <span class="service-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-truck"></use></svg></span>-->
-                    <h3>Грузовой эвакуатор</h3>
-                    <p>Организуем перевозку, если дальше ехать опасно или невозможно.</p></article>
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-shield"></use>
+                            </svg>
+                        </span>
+                        <h3>Сервис в Таганроге</h3>
+                    </div>
+                    <p>Есть собственная база для более сложных случаев и дальнейшего ремонта.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-spark"></use>
+                            </svg>
+                        </span>
+                        <h3>Запуск замёрзших авто</h3>
+                    </div>
+                    <p>Помогаем вернуть грузовик в работу в холодную погоду.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#battery"></use>
+                            </svg>
+                        </span>
+                        <h3>Помощь с аккумулятором</h3>
+                    </div>
+                    <p>Разберёмся с разряженным аккумулятором и подскажем следующий шаг.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-card-top">
+                        <span class="service-card__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#car-crane"></use>
+                            </svg>
+                        </span>
+                        <h3>Грузовой эвакуатор</h3>
+                    </div>
+                    <p>Организуем перевозку, если дальше ехать опасно или невозможно.</p>
+                </article>
             </div>
             <div class="section-cta">
                 <a class="button button--primary" href="tel:+79876543210">
@@ -427,10 +540,13 @@
     </section>
 
     <section class="section section--white">
+        <div class="gear-image gear-image--4">
+            <img src="src/images/decor/gear.png" alt="Шестеренка">
+        </div>
         <div class="container">
             <div class="section-heading">
                 <p class="section-heading__eyebrow">Ассортимент по маркам</p>
-                <h2>Марки грузовых авто</h2>
+                <h2>Марки авто</h2>
                 <p class="section-heading__intro">
                     Работаем с европейскими, российскими и китайскими грузовыми автомобилями. Подберём под вашу марку —
                     звоните.
@@ -648,45 +764,65 @@
             </div>
             <div class="failures-grid">
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Тормоза: колодки, накладки, суппорт, ремкомплект</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/66.PNG" alt="Тормоза: колодки, накладки, суппорт, ремкомплект">
+                    </div>
+                    <p>Тормоза: колодки, накладки, суппорт, ремкомплект</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Подшипники ступицы</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/67.PNG" alt="Подшипники ступицы">
+                    </div>
+                    <p>Подшипники ступицы</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Ремни и ролики</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/68.png" alt="Ремни и ролики">
+                    </div>
+                    <p>Ремни и ролики</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Патрубки, шланги, хомуты</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/69.webp" alt="Патрубки, шланги, хомуты">
+                    </div>
+                    <p>Патрубки, шланги, хомуты</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Фильтры: топливный, масляный, воздушный</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/70.webp" alt="Фильтры: топливный, масляный, воздушный">
+                    </div>
+                    <p>Фильтры: топливный, масляный, воздушный</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Стартер и генератор</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/71.webp" alt="Стартер и генератор">
+                    </div>
+                    <p>Стартер и генератор</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Сцепление: комплект, выжимной</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/72.webp" alt="Сцепление: комплект, выжимной">
+                    </div>
+                    <p>Сцепление: комплект, выжимной</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Пневмосистема: клапаны, фитинги, трубки, краны</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/73.webp" alt="Пневмосистема: клапаны, фитинги, трубки, краны">
+                    </div>
+                    <p>Пневмосистема: клапаны, фитинги, трубки, краны</p>
+                </article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/74.webp"
+                             alt="Датчики двигателя, пневмосистемы, давления, тормозов и КПП">
+                    </div>
                     <p>Датчики двигателя, пневмосистемы, давления, тормозов и КПП</p></article>
                 <article class="failure-card">
-                    <!--                    <span class="failure-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use-->
-                    <!--                        href="#icon-wrench"></use></svg></span>-->
-                    <p>Турбина и патрубки наддува</p></article>
+                    <div class="failure-card-img">
+                        <img src="src/images/crash/75.webp" alt="Турбина и патрубки наддува">
+                    </div>
+                    <p>Турбина и патрубки наддува</p>
+                </article>
             </div>
             <p class="failures-footer">Не нашли свою позицию? Звоните — подберём аналог.</p>
             <div class="section-cta">
@@ -733,36 +869,36 @@
                 </div>
                 <p class="contact-shell__note">Хотите работать курьером? Позвоните.</p>
             </div>
-            <div class="contact-shell__summary">
-                <div class="summary-card">
-                    <!--                    <span class="summary-card__icon">-->
-                    <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
-                    <!--                            <use href="#icon-route"></use>-->
-                    <!--                        </svg>-->
-                    <!--                    </span>-->
-                    <h3>Преимущества</h3>
-                    <p>Ростов-на-Дону → Таганрог → Мариуполь → Бердянск → Приморск → Мелитополь → Новоалексеевка →
-                        Чонгар</p>
-                </div>
-                <div class="summary-card">
-                    <!--                    <span class="summary-card__icon">-->
-                    <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
-                    <!--                            <use href="#icon-truck"></use>-->
-                    <!--                        </svg>-->
-                    <!--                    </span>-->
-                    <h3>Преимущества</h3>
-                    <p>Помощь на месте, передача на трассе и собственный сервис в Таганроге.</p>
-                </div>
-                <div class="summary-card">
-                    <!--                    <span class="summary-card__icon">-->
-                    <!--                        <svg viewBox="0 0 24 24" aria-hidden="true">-->
-                    <!--                            <use href="#icon-shield"></use>-->
-                    <!--                        </svg>-->
-                    <!--                    </span>-->
-                    <h3>Преимущества</h3>
-                    <p>Никаких форм и прайсов. Быстрый сценарий: звонок, уточнение, решение.</p>
-                </div>
-            </div>
+            <!--            <div class="contact-shell__summary">-->
+            <!--                <div class="summary-card">-->
+            <!--                    &lt;!&ndash;                    <span class="summary-card__icon">&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        <svg viewBox="0 0 24 24" aria-hidden="true">&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                            <use href="#icon-route"></use>&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        </svg>&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
+            <!--                    <h3>Преимущества</h3>-->
+            <!--                    <p>Ростов-на-Дону → Таганрог → Мариуполь → Бердянск → Приморск → Мелитополь → Новоалексеевка →-->
+            <!--                        Чонгар</p>-->
+            <!--                </div>-->
+            <!--                <div class="summary-card">-->
+            <!--                    &lt;!&ndash;                    <span class="summary-card__icon">&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        <svg viewBox="0 0 24 24" aria-hidden="true">&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                            <use href="#icon-truck"></use>&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        </svg>&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
+            <!--                    <h3>Преимущества</h3>-->
+            <!--                    <p>Помощь на месте, передача на трассе и собственный сервис в Таганроге.</p>-->
+            <!--                </div>-->
+            <!--                <div class="summary-card">-->
+            <!--                    &lt;!&ndash;                    <span class="summary-card__icon">&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        <svg viewBox="0 0 24 24" aria-hidden="true">&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                            <use href="#icon-shield"></use>&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                        </svg>&ndash;&gt;-->
+            <!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
+            <!--                    <h3>Преимущества</h3>-->
+            <!--                    <p>Никаких форм и прайсов. Быстрый сценарий: звонок, уточнение, решение.</p>-->
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
     </section>
 </main>

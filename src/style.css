@@ -483,6 +483,7 @@ ul, li {
     border-radius: 18px;
     font-weight: 800;
     letter-spacing: 0.01em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .button--messenger {
@@ -1183,6 +1184,32 @@ ul, li {
 .sticky-call__icon {
     width: 20px;
     height: 20px;
+}
+
+@media (hover: hover) {
+    .button--primary:hover,
+    .sticky-call:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.05);
+        box-shadow: 0 8px 24px rgba(243, 139, 16, 0.28);
+    }
+
+    .button--secondary:hover {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.16);
+        box-shadow: 0 8px 22px rgba(18, 34, 70, 0.14);
+    }
+
+    .section .button--secondary:hover {
+        background: var(--color-accent-blue-light);
+        color: var(--color-primary);
+        border-color: var(--color-accent-blue-soft);
+    }
+
+    .button--messenger:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.05);
+    }
 }
 
 @media (min-width: 760px) {

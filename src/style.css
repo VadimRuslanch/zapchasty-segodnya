@@ -1311,6 +1311,19 @@ ul, li {
     .page-footer__company-details h2 {
         font-size: 1.05rem;
     }
+
+    .service-grid {
+        grid-auto-rows: auto;
+    }
+
+    .service-card {
+        min-height: 150px;
+    }
+
+    .service-card--image {
+        min-height: 220px;
+        height: 220px;
+    }
 }
 
 @media (min-width: 425px) {

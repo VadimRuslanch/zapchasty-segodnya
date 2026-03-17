@@ -179,7 +179,7 @@ ul, li {
 .topbar-menu {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
 }
 
 .topbar-menu__link {
@@ -459,6 +459,7 @@ ul, li {
     line-height: 1;
     cursor: pointer;
     outline: none;
+    user-select: none;
 }
 
 .sidemenu__nav {

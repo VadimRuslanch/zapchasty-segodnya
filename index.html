@@ -111,10 +111,12 @@
         </nav>
         <div class="actions">
 
-            <a href="https://t.me/+79885788484" target="_blank" rel="noopener noreferrer" class="button--messenger">
+            <a href="https://t.me/+79885788484" target="_blank" rel="noopener noreferrer"
+               class="action-header button--messenger">
                 <img src="src/icons/mess/telegram.svg" alt="логотип телеграмм">
             </a>
-            <a href="https://max.ru/+79885788484" target="_blank" rel="noopener noreferrer" class="button--messenger">
+            <a href="https://max.ru/+79885788484" target="_blank" rel="noopener noreferrer"
+               class="action-header button--messenger">
                 <img src="src/icons/mess/MAX.svg" alt="логотип макс">
             </a>
             <a class="button button--primary" href="tel:+79885788484">+7 (988) 578-84-84</a>
@@ -182,11 +184,11 @@
                         <span>Большой ассортимент деталей</span>
                     </div>
                     <div class="mini-pill">
-                        <!--                        <span class="mini-pill__icon">-->
-                        <!--                            <svg viewBox="0 0 24 24" aria-hidden="true">-->
-                        <!--                                <use href="#icon-tool"></use>-->
-                        <!--                            </svg>-->
-                        <!--                        </span>-->
+                        <span class="mini-pill__icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <use href="#icon-shield"></use>
+                            </svg>
+                        </span>
                         <span>Сервис в Таганроге</span>
                     </div>
                 </div>
@@ -809,19 +811,19 @@
             <div class="failures-grid">
                 <article class="failure-card">
                     <div class="failure-card-img">
-                        <img src="src/images/crash/66.PNG" alt="Тормоза: колодки, накладки, суппорт, ремкомплект">
+                        <img src="src/images/crash/66.webp" alt="Тормоза: колодки, накладки, суппорт, ремкомплект">
                     </div>
                     <p>Тормоза: колодки, накладки, суппорт, ремкомплект</p>
                 </article>
                 <article class="failure-card">
                     <div class="failure-card-img">
-                        <img src="src/images/crash/67.PNG" alt="Подшипники ступицы">
+                        <img src="src/images/crash/67.webp" alt="Подшипники ступицы">
                     </div>
                     <p>Подшипники ступицы</p>
                 </article>
                 <article class="failure-card">
                     <div class="failure-card-img">
-                        <img src="src/images/crash/68.png" alt="Ремни и ролики">
+                        <img src="src/images/crash/68.webp" alt="Ремни и ролики">
                     </div>
                     <p>Ремни и ролики</p>
                 </article>
@@ -886,7 +888,7 @@
         <div class="container contact-shell">
             <div class="contact-shell__content">
                 <div class="section-heading">
-                    <h2>Контакт и действия</h2>
+                    <h2>Контакты и услуги</h2>
                     <p class="section-heading__intro">Все детали, сроки, наличие и способы оплаты согласуем по
                         телефону.</p>
                 </div>
@@ -918,7 +920,9 @@
 
 <footer class="page-footer">
     <div class="container page-footer__inner">
-        <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
+        <div class="brand-lockup">
+            <img class="brand-lockup__logo" src="src/images/logo.png" alt="Логотип 'Запчасти сегодня'">
+        </div>
         <nav class="page-footer__menu" aria-label="Разделы сайта">
             <a class="topbar-menu__link" href="#workflow">Как работаем</a>
             <a class="topbar-menu__link" href="#delivery-zone">Зона доставки</a>
@@ -930,6 +934,9 @@
             <h4>Реквизиты</h4>
             <ul>
                 <li>
+                    ИП Кривонос И.А.
+                </li>
+                <li>
                     <p>ОГРНИП: 317619600196882</p>
                 </li>
                 <li>
@@ -937,20 +944,26 @@
                 </li>
             </ul>
         </div>
-
     </div>
-
-
 </footer>
 
-<a class="sticky-call" href="tel:+79876543210">
+<div class="sticky-call">
+    <a href="https://t.me/+79885788484" target="_blank" rel="noopener noreferrer" class="button--messenger">
+        <img src="src/icons/mess/telegram.svg" alt="логотип телеграмм">
+    </a>
+    <a href="https://max.ru/+79885788484" target="_blank" rel="noopener noreferrer" class="button--messenger">
+        <img src="src/icons/mess/MAX.svg" alt="логотип макс">
+    </a>
+    <a class="sticky-call-button" href="tel:+79876543210">
     <span class="sticky-call__icon">
         <svg viewBox="0 0 24 24" aria-hidden="true">
             <use href="#icon-phone"></use>
         </svg>
     </span>
-    <span>Позвонить</span>
-</a>
+        <span>Позвонить</span>
+    </a>
+</div>
+
 <script>
     (() => {
         const sideMenu = document.getElementById('sidemenu');

@@ -170,6 +170,18 @@ ul, li {
     height: 80px;
 }
 
+@media (min-width: 550px) and (max-width: 1196px) {
+    .brand-lockup {
+        width: 210px;
+    }
+}
+
+.brand-lockup picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .brand-lockup__logo {
     width: 100%;
     height: 100%;
@@ -380,7 +392,13 @@ ul, li {
 .actions {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    .actions {
+        gap: 16px;
+    }
 }
 
 .topbar-menu-toggle {
@@ -488,10 +506,18 @@ ul, li {
     min-height: 60px;
     padding: 14px 22px;
     border-radius: 18px;
+    font-size: .825rem;
     font-weight: 800;
     letter-spacing: 0.01em;
     transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
+
+@media (min-width: 550px) {
+    .button {
+        font-size: 1rem;
+    }
+}
+
 
 .button--messenger {
     display: block;

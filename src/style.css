@@ -1056,17 +1056,39 @@ ul, li {
     height: 100%;
     margin: 0;
     padding: 12px;
+    display: grid;
+    gap: 12px;
     border-radius: 28px;
     background: var(--color-white);
     border: 1px solid rgba(23, 52, 111, 0.08);
 }
 
-.review-slide-card img {
+.review-slide-media {
     width: 100%;
     aspect-ratio: 9 / 10;
-    object-fit: contain;
     background: transparent;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.review-slide-card img {
+    width: fit-content;
+    max-width: 100%;
+    height: fit-content;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: top;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.review-slide-card figcaption {
+    color: var(--color-text);
+    order: -1;
+    font-size: 1.18rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .reviews-slider .splide__arrows {

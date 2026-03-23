@@ -10,6 +10,7 @@
     />
     <meta name="theme-color" content="#17346f"/>
     <title>Запчасти Сегодня | Помощь грузовым авто на маршруте Ростов-на-Дону - Чонгар</title>
+    <script defer type="module" src="/src/main.js"></script>
 </head>
 <body>
 <svg class="icon-sprite" aria-hidden="true" focusable="false">
@@ -898,6 +899,76 @@
         </div>
     </section>
 
+    <section class="section section--white reviews-section" id="reviews">
+        <div class="container">
+            <div class="reviews-shell">
+                <div class="reviews-copy">
+                    <div class="section-heading">
+                        <p class="section-heading__eyebrow">наши клиенты</p>
+                        <h2>Отзывы от нас</h2>
+                    </div>
+                </div>
+
+                <div class="reviews-slider-wrap">
+                    <section class="splide reviews-slider" aria-label="Отзывы клиентов">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/1.jpg" alt="Скриншот отзыва клиента 1"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/2.jpg" alt="Скриншот отзыва клиента 2"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/3.jpg" alt="Скриншот отзыва клиента 3"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/4.jpg" alt="Скриншот отзыва клиента 4"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/5.jpg" alt="Скриншот отзыва клиента 5"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/6.jpg" alt="Скриншот отзыва клиента 6"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/7.jpg" alt="Скриншот отзыва клиента 7"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure class="review-slide-card">
+                                        <img src="src/images/reviews/8.jpg" alt="Скриншот отзыва клиента 8"
+                                             loading="lazy" decoding="async">
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section section--accent" id="contacts">
         <div class="container contact-shell">
             <div class="contact-shell__content">
@@ -981,46 +1052,5 @@
         <span>Позвонить</span>
     </a>
 </div>
-
-<script>
-    (() => {
-        const sideMenu = document.getElementById('sidemenu');
-        const openBtn = document.getElementById('sidemenu-open');
-        const closeBtn = document.getElementById('sidemenu-close');
-        const sideMenuLinks = sideMenu ? sideMenu.querySelectorAll('.sidemenu__link') : [];
-
-        if (!sideMenu || !openBtn || !closeBtn) {
-            return;
-        }
-
-        const closeMenu = () => {
-            if (sideMenu.open) {
-                sideMenu.close();
-            }
-            openBtn.setAttribute('aria-expanded', 'false');
-        };
-
-        openBtn.addEventListener('click', () => {
-            sideMenu.showModal();
-            openBtn.setAttribute('aria-expanded', 'true');
-        });
-
-        closeBtn.addEventListener('click', closeMenu);
-
-        sideMenu.addEventListener('close', () => {
-            openBtn.setAttribute('aria-expanded', 'false');
-        });
-
-        sideMenu.addEventListener('click', (event) => {
-            if (event.target === sideMenu) {
-                closeMenu();
-            }
-        });
-
-        sideMenuLinks.forEach((link) => {
-            link.addEventListener('click', closeMenu);
-        });
-    })();
-</script>
 </body>
 </html>

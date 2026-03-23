@@ -1,3 +1,5 @@
+@import "@splidejs/splide/css";
+
 :root {
     --main-font: 'Montserrat';
     --addiction-font: 'NunitoSans';
@@ -988,6 +990,132 @@ ul, li {
     line-height: 1.7;
 }
 
+.reviews-shell {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 28px;
+    min-width: 0;
+}
+
+.reviews-copy {
+    display: grid;
+    gap: 20px;
+    min-width: 0;
+}
+
+.reviews-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.reviews-badges span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(47, 111, 199, 0.1), rgba(23, 52, 111, 0.08));
+    border: 1px solid rgba(23, 52, 111, 0.1);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.reviews-slider-wrap {
+    position: relative;
+    min-width: 0;
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    background:
+        radial-gradient(circle at top right, rgba(243, 139, 16, 0.14), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, #eef3fb 100%);
+    border: 1px solid rgba(23, 52, 111, 0.08);
+    box-shadow: 0 20px 48px rgba(23, 52, 111, 0.1);
+}
+
+.reviews-slider {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding-inline: 44px;
+}
+
+.reviews-slider .splide__track,
+.reviews-slider .splide__list,
+.reviews-slider .splide__slide {
+    min-width: 0;
+    background: transparent;
+}
+
+.reviews-slider .splide__slide {
+    height: auto;
+}
+
+.review-slide-card {
+    height: 100%;
+    margin: 0;
+    padding: 12px;
+    border-radius: 28px;
+    background: var(--color-white);
+    border: 1px solid rgba(23, 52, 111, 0.08);
+}
+
+.review-slide-card img {
+    width: 100%;
+    aspect-ratio: 9 / 10;
+    object-fit: contain;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.reviews-slider .splide__arrows {
+    position: absolute;
+    inset: 50% 0 auto;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.reviews-slider .splide__arrow {
+    width: 52px;
+    height: 52px;
+    opacity: 1;
+    background: var(--color-white);
+    border: 1px solid rgba(23, 52, 111, 0.08);
+    box-shadow: 0 12px 24px rgba(23, 52, 111, 0.14);
+    pointer-events: auto;
+}
+
+.reviews-slider .splide__arrow svg {
+    fill: var(--color-primary);
+}
+
+.reviews-slider .splide__arrow--prev {
+    left: 0;
+}
+
+.reviews-slider .splide__arrow--next {
+    right: 0;
+}
+
+.reviews-slider .splide__pagination {
+    position: static;
+    margin-top: 18px;
+}
+
+.reviews-slider .splide__pagination__page {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: rgba(23, 52, 111, 0.24);
+    opacity: 1;
+}
+
+.reviews-slider .splide__pagination__page.is-active {
+    background: var(--color-accent-orange);
+    transform: scale(1.1);
+}
+
 .section-cta {
     justify-content: center;
     margin-top: 26px;
@@ -1390,6 +1518,27 @@ ul, li {
     .topbar {
         /*flex-direction: column;*/
         align-items: stretch;
+    }
+
+    .reviews-slider-wrap {
+        padding: 18px;
+    }
+
+    .reviews-slider {
+        padding-inline: 28px;
+    }
+
+    .reviews-slider .splide__arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .reviews-slider .splide__arrow--prev {
+        left: 0;
+    }
+
+    .reviews-slider .splide__arrow--next {
+        right: 0;
     }
 
     .hero__phone-link {
